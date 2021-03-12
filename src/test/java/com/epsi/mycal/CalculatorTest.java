@@ -1,7 +1,6 @@
 package com.epsi.mycal;
 
 import static org.junit.Assert.*;
-
 import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
@@ -42,12 +41,11 @@ public class CalculatorTest {
 		int actual = calculator.mul(a, b);
 		assertEquals(a * b, actual);
 	}
-	
+
 	@Test
 	public void testDiv() {
 		int a = 6;
 		int b = 3;
-		
 		Calculator calculator = new Calculator();
 		int actual = calculator.div(a, b);
 		assertEquals(a / b, actual);
