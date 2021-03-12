@@ -39,3 +39,12 @@ task checkstyleMain (type: Checkstyle, overwrite: true) {
 spotbugs {
     ignoreFailures = true
 }
+
+test {
+  useJUnitPlatform()
+    ignoreFailures = true
+    reports {
+    junitXml.enabled = true
+    html.enabled = false
+  }
+}

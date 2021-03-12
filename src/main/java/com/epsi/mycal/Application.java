@@ -1,6 +1,6 @@
 package com.epsi.mycal;
 
-import java.nio.charset.StandardCharsets;
+import java.nio.charset.Charset;
 import java.util.Scanner;
 
 public class Application {
@@ -11,7 +11,7 @@ public class Application {
    */
   public static void main(String[] args) {
 
-    try (Scanner scanner = new Scanner(System.in, StandardCharsets.UTF_8);) {
+    try (Scanner scanner = new Scanner(System.in, Charset.defaultCharset())) {
       Calculator calc = new Calculator();
       int valueA = 0;
       int valueB = 0;
