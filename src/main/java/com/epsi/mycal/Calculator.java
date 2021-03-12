@@ -9,11 +9,11 @@ public class Calculator {
 	public int sub(int valueA, int valueB) {
 		return valueA - valueB;
 	}
-	
+
 	public int mul(int valueA, int valueB) {
 		return valueA * valueB;
 	}
-	
+
 	public int div(int valueA, int valueB) {
 		return valueA / valueB;
 	}
