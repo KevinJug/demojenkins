@@ -22,6 +22,9 @@ jacocoTestReport {
     }
 }
 
+sourceCompatibility = 11
+targetCompatibility = 11
+
 def classesJava = "${project.buildDir}/classes/java/main/"
 checkstyle {
     toolVersion = "6.3"
@@ -41,10 +44,5 @@ spotbugs {
 }
 
 test {
-  useJUnitPlatform()
     ignoreFailures = true
-    reports {
-    junitXml.enabled = true
-    html.enabled = false
-  }
 }

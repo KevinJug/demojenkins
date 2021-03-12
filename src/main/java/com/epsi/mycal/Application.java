@@ -11,8 +11,9 @@ public class Application {
    */
   public static void main(String[] args) {
 
-    try (Scanner scanner = new Scanner(System.in, Charset.defaultCharset())) {
+    try {
       Calculator calc = new Calculator();
+      Scanner scanner = new Scanner(System.in, Charset.defaultCharset());
       int valueA = 0;
       int valueB = 0;
       System.out.println("Veuillez choisir votre opération");
@@ -84,6 +85,7 @@ public class Application {
             System.out.print("Choix invalide ");
             break;
         }
+        scanner.close();
       } while (!stop);
     } catch (Exception e) {
       System.out.println("Erreur");
