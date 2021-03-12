@@ -1,10 +1,9 @@
 package com.epsi.mycal;
 
+import java.nio.charset.StandardCharsets;
 import java.util.Scanner;
 
 public class Application {
-
-  public static boolean stop = false;
 
   /** Point d'entrée de l'application.
    * 
@@ -12,7 +11,7 @@ public class Application {
    */
   public static void main(String[] args) {
 
-    try (Scanner scanner = new Scanner(System.in);) {
+    try (Scanner scanner = new Scanner(System.in, StandardCharsets.UTF_8);) {
       Calculator calc = new Calculator();
       int valueA = 0;
       int valueB = 0;
@@ -24,6 +23,7 @@ public class Application {
       System.out.println("\t -Pair");
       System.out.println("\t -Premier");
       System.out.println("\t -Stop");
+      boolean stop = false;
       do {
         System.out.println("------------");
         System.out.print("Choix : ");
