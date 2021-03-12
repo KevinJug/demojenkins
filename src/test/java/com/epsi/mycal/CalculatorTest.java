@@ -34,4 +34,21 @@ public class CalculatorTest {
 		assertEquals(a - b, actual);
 	}
 
+	@Test
+	public void testMul() {
+		int a = 2;
+		int b = 3;
+		Calculator calculator = new Calculator();
+		int actual = calculator.mul(a, b);
+		assertEquals(a * b, actual);
+	}
+	
+	@Test
+	public void testDiv() {
+		int a = 6;
+		int b = 3;
+		Calculator calculator = new Calculator();
+		int actual = calculator.div(a, b);
+		assertEquals(a / b, actual);
+	}
 }
