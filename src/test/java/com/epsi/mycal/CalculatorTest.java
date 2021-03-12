@@ -47,6 +47,7 @@ public class CalculatorTest {
 	public void testDiv() {
 		int a = 6;
 		int b = 3;
+		
 		Calculator calculator = new Calculator();
 		int actual = calculator.div(a, b);
 		assertEquals(a / b, actual);
