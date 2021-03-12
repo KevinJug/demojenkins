@@ -29,12 +29,10 @@ public class Calculator {
     if (valueA <= 1) {
       return false;
     }
-    for(int i=2; i <= valueA/2; i++)
-    {
-       if(valueA%i == 0)
-       {
-          return false;
-       }
+    for(int i=2; i <= valueA/2; i++) {
+      if(valueA%i == 0) {
+        return false;
+      }
     }
     return true;
   }
