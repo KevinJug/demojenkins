@@ -4,12 +4,16 @@ import java.util.Scanner;
 
 public class Application {
 
+  public static boolean stop = false;
+
+  /** Point d'entrée de l'application.
+   * 
+   * @param args tableau d'argument
+   */
   public static void main(String[] args) {
 
     try (Scanner scanner = new Scanner(System.in);) {
-     
       Calculator calc = new Calculator();
-      boolean stop = false;
       int valueA = 0;
       int valueB = 0;
       System.out.println("Veuillez choisir votre opération");
